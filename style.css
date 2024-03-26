@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Nunito';
+    src: URL('static/Nunito.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #202020;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 30em;
+}
+
+.head_section img {
+    display: block;
+    margin: 0 auto;
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.head_section p {
+    text-align: center;
+    color: #fff;
+    margin: 1rem auto;
+}
+
+.social_links ul li {
+    width: 100%;
+    margin: 1.2rem 0;
+    padding: 0.4rem 0.8rem;
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 0px );
+    border-radius: 5px;
+    transition: background 0.25s;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 0 0.8rem  rgba(255, 255, 255, .12);
+}
+
+.social_links ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 1rem;
+}
+
+.social_links ul li a span {
+    line-height: 1.4rem;
+}
+
+.social_links ul .website:hover {
+    background: #32a350;
+}
+
+.social_links ul .email:hover {
+    background:#f3b604;
+}
+
+.social_links ul .messenger:hover {
+    background:#1da1dd;
+}
+
+.social_links ul .video:hover {
+    background: #ff0000;
+}
+
+.social_links ul .social:hover {
+    background: #0077ff;
+}
+
+@media only screen and (max-width: 549px) {
+    .container{
+        width: 88vw;
+    }
+}
